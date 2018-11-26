@@ -5,7 +5,7 @@ import java.io.File;
 import org.junit.Test;
 
 /**
- * ÂŞÁĞÎÄ¼şÏµÍ³ÏÂÖÆ¶¨Ä¿Â¼ÏÂËùÓĞµÄÎÄ¼ş¼ĞºÍÎÄ¼şÃû
+ * ç½—åˆ—æ–‡ä»¶ç³»ç»Ÿä¸‹åˆ¶å®šç›®å½•ä¸‹æ‰€æœ‰çš„æ–‡ä»¶å¤¹å’Œæ–‡ä»¶å
  * @author WZMAGCC2
  *
  */
@@ -23,13 +23,13 @@ public class ListFiles {
 		if(dir == null || !dir.exists()) 
 			return;
 		if(dir.isFile()) {
-			System.out.println("ÎÄ¼ş£º"+dir.getName());
+			System.out.println("æ–‡ä»¶ï¼š"+dir.getName());
 			return;
-		}else {//Èç¹û²»ĞèÒªÂŞÁĞÎÄ¼ş¼Ğ£¬ÕâÀïelseÉ¾³ı¼´¿É
-			System.out.println("Ä¿Â¼£º"+dir.getName());
+		}else {//å¦‚æœä¸éœ€è¦ç½—åˆ—æ–‡ä»¶å¤¹ï¼Œè¿™é‡Œelseåˆ é™¤å³å¯
+			System.out.println("ç›®å½•ï¼š"+dir.getName());
 		}
 		for(File file:dir.listFiles()) {
-			listAllFiles(file);//µİ¹é
+			listAllFiles(file);//é€’å½’
 		}
 	}
 }
