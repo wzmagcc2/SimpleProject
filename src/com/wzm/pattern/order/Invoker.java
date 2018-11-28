@@ -1,5 +1,5 @@
 package com.wzm.pattern.order;
-
+//命令调用者
 public class Invoker {
 	private Command command = null;
 	

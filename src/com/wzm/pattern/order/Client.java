@@ -1,5 +1,6 @@
 package com.wzm.pattern.order;
 
+//客户端，其实就是测试类
 public class Client {
 
 	public static void main(String[] args) {
