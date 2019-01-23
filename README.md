@@ -15,7 +15,9 @@
    - [日常错误解决](#1.5)
 
 <a name="1">1GIT操作</a>
+
 <a name="1.1">1.1文件</a>
+
 <a name="1.1.1">1.1.1添加</a>
 
 ```sh
@@ -39,6 +41,7 @@ git push
 ```
 
 <a name="1.2">1.2分支</a>
+
 <a name="1.2.1">1.2.1新建</a>
 
 ```sh
@@ -91,6 +94,7 @@ git merge feature_1
 ```
 
 <a name="1.3">1.3时光机</a>
+
 <a name="1.3.1">1.3.1工作区和暂存区</a>
 
 >工作区：电脑里面的工作目录。
@@ -119,6 +123,7 @@ git reset --hard git版本号
 ```
 
 1.4储藏<a name="1.4"></a>
+
 >就是你有更新代码，但是这时候你又不想提交代码，因为你只工作了一半，可以使用如下命令
 
 ```sh
@@ -135,5 +140,6 @@ git stash pop
 ```
 
 1.5日常错误解决<a name="1.5"></a>
+
 **清理`Untracked files`文件**
 >使用`git clean`命令。可参考[官方git clean](https://git-scm.com/docs/git-clean)
