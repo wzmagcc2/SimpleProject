@@ -1,10 +1,10 @@
 package com.wzm.pattern;
 
 import org.junit.Assert;
-import org.junit.jupiter.api.Test;
 
 import com.wzm.pattern.flyweight.FlyWeight;
 import com.wzm.pattern.flyweight.FlyWeightFactory;
+import org.junit.Test;
 
 public class PatternTest {
 
