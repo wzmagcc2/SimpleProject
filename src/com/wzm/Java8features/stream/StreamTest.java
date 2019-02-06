@@ -25,7 +25,7 @@ public class StreamTest {
     @Test
     public void mapTest(){
         List<String> list1 = Stream.of("a","wzm","HelloWorld")
-                .map(x -> x.toUpperCase()).collect(Collectors.toList());
+                .map(String::toUpperCase).collect(Collectors.toList());
         list1.forEach(System.out::println);
     }
 
@@ -45,9 +45,9 @@ public class StreamTest {
     @Test
     public void maxAndMinTest(){
         List<String> list1 = Stream.of("a","wzm","HelloWorld").collect(Collectors.toList());
-        String max = list1.stream().max(Comparator.comparing((value) -> value.length())).get();
+        String max = list1.stream().max(Comparator.comparing(String::length)).get();
         System.out.println("长度最长字符是："+max);
-        String min = list1.stream().min(Comparator.comparing(value -> value.length())).get();
+        String min = list1.stream().min(Comparator.comparing(String::length)).get();
         System.out.println("长度最短字符是：" + min);
     }
 
@@ -84,7 +84,7 @@ public class StreamTest {
         Stream.of(user1,user2,user3)
                 .filter(user -> "上海".equals(user.getIntro()))
                 .filter(user -> user.getAge()<=22)
-                .map(user -> user.getName())
+                .map(User::getName)
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
 
